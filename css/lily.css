@@ -9,3 +9,7 @@ body {
 .text-white {
     color: antiquewhite;
 }
+
+.border-pink {
+    box-shadow: 5px 5px 90px 45px #ff00ff;
+}

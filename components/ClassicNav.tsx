@@ -22,7 +22,7 @@ const ClassicNav = () => {
   const direct = (route: Routes) => router.push(route);
 
   return (
-    <Navbar color="light" light expand="xl">
+    <Navbar color="light" light expand="xl" className="border-pink">
       <NavbarBrand href="/">Foundations</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
