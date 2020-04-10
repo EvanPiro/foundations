@@ -3,8 +3,8 @@ import ClassicNav from './ClassicNav';
 
 const Layout = ({children}) => {
   return (
-    <div className="bg-lily-green">
-      <Container className="bg-lily-green">
+    <div>
+      <Container>
         <Row>
           <Col>
             <ClassicNav />
