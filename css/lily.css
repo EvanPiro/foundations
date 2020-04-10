@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'josefin-sans';
+    src: url('/JosefinSans-Regular.ttf')  format('truetype')
+}
+
 body {
+    font-family: 'josefin-sans', Fallback, sans-serif;;
     background-color: greenyellow;
 }
 
