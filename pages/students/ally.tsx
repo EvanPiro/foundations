@@ -4,8 +4,7 @@ import * as React from 'react';
 const Ally = () => {
   return (
     <ContentPage title="Ally's Page">
-      welcome 2 my page
-
+      This is your content page. Place any app code here to demo it for the world to see.
     </ContentPage>
   )
 };
