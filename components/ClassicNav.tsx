@@ -56,6 +56,9 @@ const ClassicNav = () => {
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem>
+            <NavLink onClick={() => direct(Routes.PersonalityTests)}>Personality Test</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink href="https://github.com/EvanPiro/foundations">GitHub</NavLink>
           </NavItem>
         </Nav>

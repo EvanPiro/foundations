@@ -3,4 +3,5 @@ export enum Routes {
   StudentsAlly = '/students/ally',
   LessonsSortingFruit = '/lessons/sorting-fruits',
   LessonsAggregateCorona = '/lessons/corona-aggregates',
+  PersonalityTests = '/personality-tests',
 }
