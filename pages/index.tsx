@@ -6,14 +6,13 @@ import ContentPage from '../components/ContentPage';
 
 const Home = () => {
   return (
-    <ContentPage title="Dev Night @ The Gram">
+    <ContentPage title="Two Devs">
       <p>
-        Welcome to the Gramercy Dev Night repository! This is your codebase now. You'll be able to modify anything here, push up
-        your changes and have them merged into the project. This is the start of a
+        Our philosophy is simple: An innovator and two devs can grow a product from seed to stead (this is not it lol).
       </p>
     </ContentPage>
   )
-}
+};
 
 
 export default Home;

@@ -1,15 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/lily.css';
+import '../scss/index.scss';
 import Layout from '../components/layout';
 
 const App = ({Component, pageProps}) => {
   return (
     <Layout>
-      <title>Foundations</title>
+      <title>Two Devs</title>
       <Component {...pageProps}/>
     </Layout>
   )
-}
-
+};
 
 export default App;

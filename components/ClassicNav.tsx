@@ -1,65 +1,40 @@
-import {
-  Collapse,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Nav,
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown
-} from 'reactstrap';
+import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { useState } from 'react';
 import { Routes } from '../Routes';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+
+const bsLinkCb = (router, route: Routes) => {
+  return async (e) => {
+    console.log('route hit')
+
+    await router.push(Routes.AboutUs);
+    e.stopPropagation()
+
+  }
+};
 
 const ClassicNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter()
   const toggle = () => setIsOpen(!isOpen);
-  const direct = (route: Routes) => router.push(route);
 
   return (
-    <Navbar expand="xl" className="border-pink bg-pink-gradient">
-      <NavbarBrand href="/">Foundations</NavbarBrand>
+    <Navbar expand="xs" className="border-pink bg-pink-gradient">
+      <NavbarBrand
+        href={Routes.Home}
+      >
+        Two Devs
+      </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="mr-auto" navbar>
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
-              Students
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem onClick={() => direct(Routes.StudentsLily)}>
-                Lily
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem onClick={() => direct(Routes.StudentsAlly)}>
-                Ally
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
-              Lessons
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem onClick={() => direct(Routes.LessonsSortingFruit)}>
-                Sorting Fruit
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem onClick={() => direct(Routes.LessonsAggregateCorona)}>
-                Corona Aggregates
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
           <NavItem>
-            <NavLink onClick={() => direct(Routes.PersonalityTests)}>Personality Test</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="https://github.com/EvanPiro/foundations">GitHub</NavLink>
+            <Link
+              href={Routes.AboutUs}
+            >
+              About Us
+            </Link>
           </NavItem>
         </Nav>
       </Collapse>
