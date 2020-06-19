@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'amiko-regular';
+  src: url('/Amiko-Regular.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'amiko-bold';
+  src: url('/Amiko-Bold.ttf')  format('truetype')
+}
+
+$champagne: #f7e7ce;
+$crimson: #dc143c;
+$brand_black: #1e1e34;
+
+
+body {
+  font-family: 'amiko-regular', Fallback, sans-serif;
+  background-color: white;
+  //background-image: radial-gradient(circle, #ffffff, #f068f0, #f068f0)!important;
+  color: $brand_black;
+}
+
+h1 {
+  font-family: 'amiko-bold', Fallback, sans-serif;
+  color: $brand_black;
+}
