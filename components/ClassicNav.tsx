@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Routes } from '../Routes';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { Pyramid } from './icons';
 
 const bsLinkCb = (router, route: Routes) => {
   return async (e) => {
@@ -20,11 +21,11 @@ const ClassicNav = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar expand="xs" className="border-pink bg-pink-gradient">
+    <Navbar expand="xl" dark className="border-pink bg-pink-gradient pr-1 pt-0 pb-0">
       <NavbarBrand
         href={Routes.Home}
       >
-        Two Devs
+        <Pyramid />
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>

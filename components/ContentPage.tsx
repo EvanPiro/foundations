@@ -11,7 +11,7 @@ const ContentPage = ({title, children}) => {
             {title}
           </h1>
         </Row>
-        <Row className="p-3">
+        <Row>
           <Col md={8}>
             {children}
           </Col>

@@ -5,8 +5,8 @@ const Layout = ({children}) => {
   return (
     <div>
       <Container>
-        <Row>
-          <Col>
+        <Row className="bg-blue pl-0 pr-0 drop-shadow">
+          <Col className="pl-0 pr-0">
             <ClassicNav />
           </Col>
         </Row>
